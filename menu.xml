@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="root-menu" label="Openbox 3">
+
+<separator label="Apps" />
+
+<item label="App search" icon='/home/sh4nesu/.config/openbox/icons/Search.png'>
+  <action name="Execute">
+		<command>rofi -show drun</command>
+    <startupnotify>
+      <enabled>yes</enabled>
+    </startupnotify>
+	</acrtion>
+</item>
+
+<separator/>
+
+<item label="kitty" icon='/home/sh4nesu/.config/openbox/icons/Terminal.png'>
+  <action name="Execute">
+    <command>kitty</command>
+    <startupnotify>
+      <enabled>yes</enabled>
+    </startupnotify>
+  </aciton>
+</item>
+
+<item label="Xterm" icon='/home/sh4nesu/.config/openbox/icons/Xterm.png'>
+  <action name="Execute">
+    <command>Xterm</command>
+    <startupnotify>
+      <enabled>yes</enabled>
+    </startupnotify>
+  </action>
+</item>
+
+<separator/>
+	
+<item label="Thunar" icon='/home/sh4nesu/.config/openbox/icons/File-manager.png'>
+  <action name="Execute">
+    <command>Thunar</command>
+    <startupnotify>
+      <enabled>yes</enabled>
+    </startupnotify>
+  </action>
+</item>
+
+<item label="Chromium" icon='/home/sh4nesu/.config/openbox/icons/Chromium.png'>
+  <action name="Execute">
+    <command>flatpak run org.chromium.Chromium</command>
+    <startupnotify>
+      <enabled>yes</enabled>
+    </startupnotify>
+  </action>
+</item>
+
+</openbox_menu>
